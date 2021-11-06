@@ -54,7 +54,8 @@ export default {
     {
       name: "summary",
       title: "Summary",
-      type: "string",
+      type: "text",
+      validation: (Rule) => Rule.required().max(330),
     },
   ],
 
